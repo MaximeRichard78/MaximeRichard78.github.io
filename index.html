@@ -128,9 +128,9 @@
         </header>
         <section>
             <div class="city-links">
-                <a href="#" data-folder="/plaisir/image" id="linkPlaisir">Plaisir</a>
-                <a href="#" data-folder="/les-clayes-sous-bois/image" id="linkLesClayesSousBois">Les Clayes-sous-Bois</a>
-                <a href="#" data-folder="/saint-germain-en-laye/image" id="linkSaintGermainEnLaye">Saint-Germain-en-Laye</a>
+                <a href="#" data-folder="./plaisir/image" id="linkPlaisir">Plaisir</a>
+                <a href="#" data-folder="./les-clayes-sous-bois/image" id="linkLesClayesSousBois">Les Clayes-sous-Bois</a>
+                <a href="#" data-folder="./saint-germain-en-laye/image" id="linkSaintGermainEnLaye">Saint-Germain-en-Laye</a>
             </div>
             <div class="maps-button" id="mapsButtonPlaisir">
                 <a href="https://www.google.com/maps/dir//28+Av.+du+19+Mars+1962,+78370+Plaisir/@48.8314037,1.8598062,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e6857c52fe5941:0x7bba0948d0ef7334!2m2!1d1.9422066!2d48.8314331?entry=ttu" class="btn btn-primary" target="_blank">Trouver la laverie</a>
@@ -186,21 +186,21 @@
                         // If a different city is clicked, fetch and display the images
                         currentFolder = folder;
                         fetchImages(folder);
-                        if (folder === '/plaisir/image') {
+                        if (folder === './plaisir/image') {
                             mapsButtonPlaisir.style.display = 'flex';
                             mapsButtonLesClayesSousBois.style.display = 'none';
                             mapsButtonSaintGermain.style.display = 'none';
                             openingHoursPlaisir.style.display = 'block';
                             openingHoursLesClayesSousBois.style.display = 'none';
                             openingHoursSaintGermain.style.display = 'none';
-                        } else if (folder === '/les-clayes-sous-bois/image') {
+                        } else if (folder === './les-clayes-sous-bois/image') {
                             mapsButtonLesClayesSousBois.style.display = 'flex';
                             mapsButtonPlaisir.style.display = 'none';
                             mapsButtonSaintGermain.style.display = 'none';
                             openingHoursLesClayesSousBois.style.display = 'block';
                             openingHoursPlaisir.style.display = 'none';
                             openingHoursSaintGermain.style.display = 'none';
-                        } else if (folder === '/saint-germain-en-laye/image') {
+                        } else if (folder === './saint-germain-en-laye/image') {
                             mapsButtonSaintGermain.style.display = 'flex';
                             mapsButtonPlaisir.style.display = 'none';
                             mapsButtonLesClayesSousBois.style.display = 'none';
